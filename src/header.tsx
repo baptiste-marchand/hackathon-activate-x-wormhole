@@ -49,7 +49,7 @@ export default function Header() {
                     </Select>
                 </FormControl>
             </Box>
-            <h1 className="page-title">Algoperability</h1>
+            <img src='/images/logoB.png' width={220}/   >
             <button
                 className="connect"
                 onClick={connectWallet}

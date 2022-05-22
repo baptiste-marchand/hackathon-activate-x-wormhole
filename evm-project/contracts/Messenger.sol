@@ -67,7 +67,7 @@ contract Messenger {
         _completedMessages[vm.hash] = true;
 
         //Do the thing
-        solana_msg = string(vm.payload);
+        algorand_msg = string(vm.payload);
     }
 
     function getAlgorandMsg() public view returns (string memory){
