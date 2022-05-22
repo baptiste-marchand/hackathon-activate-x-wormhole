@@ -5,10 +5,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(4, 15, 96);
+  background: radial-gradient(circle, rgb(55, 32, 77) 20%, rgb(38, 23, 56) 80%) !important;
+  color: white !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   white-space: pre;
+}
+
+header {
+  padding: 15px 200px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connect {
+  margin: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
+  height: 41px;
+  width: 140px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2669f5;
+}
+.menuItem {
+  color: white !important;
+  border: white;
+}
+
+.blockchain-logo {
+  object-fit: cover;
+  width:30px;
+  height:30px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+  color: white;
+}
+
+.myNFTs {
+  margin: 0.5rem 1rem;
+  padding: 0.1rem 1rem;
+  height: 20em;
+  width: 10em;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }

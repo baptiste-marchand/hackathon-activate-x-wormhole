@@ -1,16 +1,11 @@
 /* global AlgoSigner */
 import './App.css';
 import {Button, Container, Header, Message} from "semantic-ui-react";
-import {useState, useCallback} from "react";
+import {useState, useCallback, useEffect} from "react";
+import AlgoCall from "./AlgorandTransaction";
 
 const appId = 13793863;
-/**
- * React Component displaying a title, a button doing some (AlgoSigner-related) actions
- * and a message with the result.
- *
- * @param buttonAction is a (potentially async) function called when clicking on the button
- *   and returning the result to be displayed
- */
+
 const ExampleAlgoSigner = ({title, buttonText, buttonAction}) => {
   const [result, setResult] = useState("");
 
@@ -95,24 +90,22 @@ const GetAppGlobalState = () => {
 };
 
 const App = () => {
+/*  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!loaded) {
+      AlgoCall();
+      setLoaded(true);
+    }
+  }, [loaded]);*/
+
   return (
     <Container className="App">
-      <Header as="h1" dividing>Simple React App Using AlgoSigner</Header>
-      <p>
-        The Pure Stake Team provide many examples using AlgoSigner.
-        See <a
-        href="https://purestake.github.io/algosigner-dapp-example">https://purestake.github.io/algosigner-dapp-example</a> for
-        more examples.
-      </p>
+      <h1 as="h1" dividing>My NFT Collection</h1>
 
-      <CheckAlgoSigner/>
-
-      <GetAccounts/>
-
-      <GetParams/>
-
-      <GetAppGlobalState/>
-
+      <div className="myNFTs">
+        <p>My NFTs</p>
+      </div>
     </Container>
   );
 };
